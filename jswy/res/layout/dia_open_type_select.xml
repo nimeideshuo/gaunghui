@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btnLook" android:background="@drawable/btn_operation_selector" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_margin="10.0dip" android:text="@string/browse" />
+    <Button android:id="@id/btnEdit" android:background="@drawable/btn_operation_selector" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_margin="10.0dip" android:text="@string/edit" />
+</LinearLayout>

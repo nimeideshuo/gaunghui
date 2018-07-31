@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="@color/huise"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_weight="1.35"
+            android:gravity="center"
+            android:text="商品"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@drawable/btn_dialog_pre" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_weight="1.95"
+            android:gravity="center"
+            android:text="单位"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:background="@drawable/btn_dialog_pre" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/test2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="数量"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lv_commodity_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/divider_1" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="div">#55cccccc</color>
+    <color name="write_order_bg">#ffddeff8</color>
+    <color name="qianlanse">#404040</color>
+    <color name="outdate">#99ff0000</color>
+    <color name="warndate">#99ffee00</color>
+    <color name="trans">#00000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="ligt_green">#ff009966</color>
+    <color name="bg">#fff5fffa</color>
+    <color name="dark_blue">#ff33608b</color>
+    <color name="main_bg">#ffffff</color>
+    <color name="submain_bg">#ffffffff</color>
+    <color name="text_color">#ff15406c</color>
+    <color name="green">#ff00ff00</color>
+    <color name="visit_job_nor">#fff7f4e3</color>
+    <color name="visit_job_pre">#fff0e3af</color>
+    <color name="visit_nor">#fff6f6f6</color>
+    <color name="visit_pre">#ff90aeb9</color>
+    <color name="menu_butom_bg">#ff3faee8</color>
+    <color name="record_title_color">#ff000000</color>
+    <color name="nine_point_bg">#ffb0c4de</color>
+    <color name="selected_circle">#ff00ffff</color>
+    <color name="line_color">#ff00fff0</color>
+    <color name="in_circle_color">#ffc0c0c0</color>
+    <color name="light_gray">#ffcccccc</color>
+    <color name="gray">#ff999999</color>
+    <color name="function_button_press">#ff9bce15</color>
+    <color name="function_1_button_press">#ff3cb2c0</color>
+    <color name="function_2_button_press">#ff63ac1b</color>
+    <color name="function_3_button_press">#ff8853eb</color>
+    <color name="function_4_button_press">#ff2d89f0</color>
+    <color name="function_5_button_press">#ffe56554</color>
+    <color name="function_6_button_press">#ff3cb2c0</color>
+    <color name="function_7_button_press">#ff217882</color>
+    <color name="function_8_button_press">#ff0b7bb5</color>
+    <color name="function_9_button_press">#ff0b7bb5</color>
+    <color name="function_10_button_press">#ff0b7bb5</color>
+    <color name="function_11_button_press">#ff0b7bb5</color>
+    <color name="bg_main_divder">#55cccccc</color>
+    <color name="bg_item_button">#ffc4c4c4</color>
+    <color name="bg_menu_button">#ddffffff</color>
+    <color name="splash_info_text">#ff808a87</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+
+    <item name="vpi__bright_foreground_holo_dark" type="color">@color/vpi__background_holo_light</item>
+    <item name="vpi__bright_foreground_holo_light" type="color">@color/vpi__background_holo_dark</item>
+
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+
+    <item name="vpi__bright_foreground_inverse_holo_dark" type="color">@color/vpi__bright_foreground_holo_light</item>
+    <item name="vpi__bright_foreground_inverse_holo_light" type="color">@color/vpi__bright_foreground_holo_dark</item>
+
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="wenzi">#ffffff</color>
+    <color name="yanse">#444444</color>
+    <color name="auto">#808080</color>
+    <color name="heise">#000000</color>
+    <color name="huise">#808080</color>
+    <color name="lvse">#6699ff</color>
+    <color name="auto_add_shop">#808080</color>
+    <color name="baise">#ffffffff</color>
+    <color name="touming">#00000000</color>
+    <color name="qingse">#30B1F5</color>
+    <color name="cd_huise">#c9c9ce</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="transparent">#50000000</color>
+
+</resources>

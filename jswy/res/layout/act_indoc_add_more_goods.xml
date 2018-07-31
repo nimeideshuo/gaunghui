@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@color/light_gray" >
+
+        <TextView
+            style="@style/m_order_title"
+            android:layout_weight="1.0"
+            android:text="商品" />
+
+        <TextView
+            style="@style/m_order_title"
+            android:layout_weight="2.0"
+            android:text="明细" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_1" />
+
+</LinearLayout>

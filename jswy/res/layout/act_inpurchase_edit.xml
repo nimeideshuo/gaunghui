@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/linearSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <com.ahjswy.cn.views.AutoTextView
+            android:id="@+id/atvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/search_input"
+            android:drawableLeft="@drawable/search"
+            android:hint="@string/hint_auto_add_shop"
+            android:imeOptions="actionDone"
+            android:popupBackground="@drawable/write_bg"
+            android:singleLine="true"
+            android:textColor="@color/auto_add_shop"
+            android:textColorHint="@color/qianlanse"
+            android:textSize="@dimen/auto_14sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="90.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="1.6"
+            android:background="@drawable/btn_operation_selector"
+            android:gravity="center_vertical"
+            android:padding="2dip"
+            android:text="   添加"
+            android:textSize="@dimen/btn_add_shop_14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/btn_dialog_nor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/auto_reLayou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listView_addShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dip" >
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_dialog_nor"
+            android:orientation="horizontal"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip"
+            android:paddingTop="1.0dip" >
+            <Button
+                android:id="@+id/btn_goodClass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1"
+                android:background="@color/bg_menu_button"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/bt_sumNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1"
+                android:background="@color/bg_menu_button"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/bt_totalSum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1"
+                android:background="@color/bg_menu_button"
+                android:gravity="center"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

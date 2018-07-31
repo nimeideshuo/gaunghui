@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/department" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnDepartment" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="仓库" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnWarehouse" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="客户" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnCustomer" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="促销方案" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnPromotion" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="客户电话" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etMobile" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="3.0" android:imeOptions="actionNext" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="客户车辆" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etTruckNumber" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="3.0" android:imeOptions="actionNext" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="整单折扣" android:layout_weight="1.0" />
+                <com.sunwuyou.swyxs.views.EditButtonView android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etDiscountRatio" android:tag="2" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="交货日期" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnDeliveryTime" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="结算日期" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/btnSettleTime" android:background="@drawable/btn_2_selector" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="备注" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etRemark" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="摘要" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etSummary" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <CheckBox android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/cbDistribution" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="配送" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/dialog_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="配送地址" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/dialog_edit" android:gravity="center|left" android:id="@id/etCustomerAddress" android:background="@drawable/login_panel_edit_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:hint="双击选择地址" android:minLines="2" android:layout_weight="3.0" android:inputType="textMultiLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

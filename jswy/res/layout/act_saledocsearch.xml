@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10.0dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="单据类型"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnDoctype"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:text="全部"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/department"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnDepartment"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:text="全部"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/warehouse"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnWarehouse"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:text="全部"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/customer"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnCustomer"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:text="全部"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="起始日期"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnStarttime"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="结束日期"
+            android:textSize="@dimen/dialog_label" />
+
+        <Button
+            android:id="@+id/btnEndtime"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/btn_2_selector"
+            android:gravity="center|left"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="备注摘要"
+            android:textSize="@dimen/dialog_label" />
+
+        <EditText
+            android:id="@+id/etRemarkSummary"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/login_panel_edit_bg"
+            android:gravity="center|left"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="单号"
+            android:textSize="@dimen/dialog_label" />
+
+        <EditText
+            android:id="@+id/etShowID"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/login_panel_edit_bg"
+            android:gravity="center|left"
+            android:textSize="@dimen/dialog_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textSize="@dimen/dialog_label" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:text="只查询未结清单据" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDefaultSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_1_selector"
+        android:text="恢复默认设置" />
+
+</LinearLayout>

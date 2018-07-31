@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="10.0dip" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/department"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <Button
+                    android:id="@+id/btnDepartment"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/btn_2_selector"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/warehouse"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <Button
+                    android:id="@+id/btnWarehouse"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/btn_2_selector"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/suppler"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <Button
+                    android:id="@+id/btnSuppler"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/btn_2_selector"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="电话号码"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <com.ahjswy.cn.views.CleanableEditText
+                    android:id="@+id/et_gongYingShang_phone"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/login_panel_edit_bg"
+                    android:drawableRight="@drawable/search_clear_pressed"
+                    android:gravity="left|center"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/doc_discount"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <com.ahjswy.cn.views.CleanableEditText
+                    android:id="@+id/etDiscountRatio"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/login_panel_edit_bg"
+                    android:drawableRight="@drawable/search_clear_pressed"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/date_of_arrival"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <Button
+                    android:id="@+id/btnDeliveryTime"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/btn_2_selector"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/balance_date"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <Button
+                    android:id="@+id/btnSettleTime"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/btn_2_selector"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/summary"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <com.ahjswy.cn.views.CleanableEditText
+                    android:id="@+id/etSummary"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/login_panel_edit_bg"
+                    android:drawableRight="@drawable/search_clear_pressed"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/remark"
+                    android:textColor="@color/yanse"
+                    android:textSize="@dimen/dialog_label" />
+
+                <com.ahjswy.cn.views.CleanableEditText
+                    android:id="@+id/etRemark"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/login_panel_edit_bg"
+                    android:drawableRight="@drawable/search_clear_pressed"
+                    android:gravity="left|center"
+                    android:textSize="@dimen/dialog_edit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

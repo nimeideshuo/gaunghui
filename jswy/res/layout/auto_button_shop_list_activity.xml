@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/biaotitou_button" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="条形码："
+                        android:textSize="@dimen/dialog_label" />
+
+                    <TextView
+                        android:id="@+id/tv_auto_shop_intent_tiaoxing_ma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123465432123"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="规    格："
+                        android:textSize="@dimen/dialog_label" />
+
+                    <TextView
+                        android:id="@+id/tv_auto_shop_intent_guige"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_SaleCue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:id="@+id/tvSaleCue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/key_board_bg"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="仓库"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <Button
+                        android:id="@+id/btn_auto_shop_intent_cangku"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/btn_2_selector"
+                        android:gravity="left|center"
+                        android:paddingLeft="10.0dip"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearBatch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="单位"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <Button
+                        android:id="@+id/btn_auto_shop_intent_danwei"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/btn_2_selector"
+                        android:gravity="left|center"
+                        android:paddingLeft="10.0dip"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="数量"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_numbers"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:clickable="false"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:paddingLeft="10.0dip"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="单价"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_danjia"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:paddingLeft="10.0dip"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="小计"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_xiaoji"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:imeOptions="actionNext"
+                        android:tag="2"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="单品折扣"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_danpin_zhekou"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:imeOptions="actionNext"
+                        android:tag="2"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="折后单价"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_zhehou_danjia"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:imeOptions="actionNext"
+                        android:tag="2"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="折后小计"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_zhehou_xiaoji"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:imeOptions="actionNext"
+                        android:tag="2"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="备注"
+                        android:textSize="@dimen/dialog_label" />
+
+                    <com.ahjswy.cn.views.CleanableEditText
+                        android:id="@+id/ed_auto_shop_intent_beizhu"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/login_panel_edit_bg"
+                        android:drawableRight="@drawable/search_clear_pressed"
+                        android:gravity="left|center"
+                        android:imeOptions="actionNext"
+                        android:tag="2"
+                        android:textSize="@dimen/dialog_edit" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

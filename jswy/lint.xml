@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore">
+        <ignore path="src/com/ahjswy/cn/ui/inpurchase/InpurchaseEditActivity.java" />
+    </issue>
+    <issue id="CutPasteId">
+        <ignore path="src/com/ahjswy/cn/ui/inpurchase/InpurchaseEditActivity.java" />
+    </issue>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/liupiao/com/main/CaigouRuKu.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+    <issue id="ViewHolder" severity="ignore" />
+    <issue id="WorldReadableFiles" severity="ignore" />
+    <issue id="WorldWriteableFiles" severity="ignore" />
+</lint>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lieSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center|left"
+            android:text=""
+            android:textSize="@dimen/list_label" />
+
+        <com.ahjswy.cn.views.AutoTextView
+            android:id="@+id/atvSearch"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/search_input"
+            android:drawableLeft="@drawable/search"
+            android:hint="@string/hint_actin_bar_search"
+            android:imeOptions="actionDone"
+            android:popupBackground="@drawable/write_bg"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/qianlanse"
+            android:textSize="@dimen/list_edit" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="50.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/btn_operation_selector"
+            android:gravity="center"
+            android:text="添加"
+            android:textSize="@dimen/list_button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:layout_below="@id/lieSearch"
+        android:background="@drawable/btn_dialog_nor"
+        android:gravity="center_vertical" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/top" />
+
+</RelativeLayout>
