@@ -36,23 +36,23 @@ public class DefDocItemCG implements Serializable {
 	private double price;
 
 	private double baseprice;
-	private long inorderdocid;
-	private long inorderitemid;
+	private String inorderdocid;
+	private String inorderitemid;
 	private String inorderdocshowid;
 
-	public long getInorderdocid() {
+	public String getInorderdocid() {
 		return inorderdocid;
 	}
 
-	public void setInorderdocid(long inorderdocid) {
+	public void setInorderdocid(String inorderdocid) {
 		this.inorderdocid = inorderdocid;
 	}
 
-	public long getInorderitemid() {
+	public String getInorderitemid() {
 		return inorderitemid;
 	}
 
-	public void setInorderitemid(long inorderitemid) {
+	public void setInorderitemid(String inorderitemid) {
 		this.inorderitemid = inorderitemid;
 	}
 

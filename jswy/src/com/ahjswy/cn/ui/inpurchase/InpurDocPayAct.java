@@ -59,7 +59,7 @@ public class InpurDocPayAct extends BaseActivity implements Clean, OnClickListen
 	@Override
 	protected void onCreate(Bundle paramBundle) {
 		super.onCreate(paramBundle);
-		setContentView(R.layout.act_outdoc_pay);
+		setContentView(R.layout.act_input_doc_pay);
 		initView();
 		initDate();
 		initListener();
@@ -129,8 +129,7 @@ public class InpurDocPayAct extends BaseActivity implements Clean, OnClickListen
 		PDH.show(this, new PDH.ProgressCallBack() {
 
 			public void action() {
-				String localString = new ServiceCustomer().cu_queryCustomerPreReceived(
-						new ReqCustomerdebt().setCustomerid(customerid).setIscustomer(true));
+				String localString = new ServiceCustomer().cu_queryCustomer(new ReqCustomerdebt().setCustomerid(customerid).setIscustomer(false));
 				handler.sendMessage(handler.obtainMessage(2, localString));
 			}
 

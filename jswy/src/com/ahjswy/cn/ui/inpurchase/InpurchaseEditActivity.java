@@ -841,8 +841,8 @@ public class InpurchaseEditActivity extends BaseActivity implements OnTouchListe
 		itemxs.setDiscountprice(item.getDiscountprice());
 		itemxs.setWarehouseid(doccg.getWarehouseid());
 		itemxs.setWarehousename(doccg.getWarehousename());
-		itemxs.setInorderdocid(item.getDocid());
-		itemxs.setInorderitemid(item.getItemid());
+		itemxs.setInorderdocid(""+item.getDocid());
+		itemxs.setInorderitemid(""+item.getItemid());
 		// itemxs.setInorderdocshowid(item.gets);
 		return itemxs;
 	}
