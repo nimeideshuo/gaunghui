@@ -46,7 +46,7 @@ public class ServicePayType {
 			for (int i = 0; i < array.length(); i++) {
 				DefDocPayType payType2 = new DefDocPayType();
 				JSONObject jsonObject = array.getJSONObject(i);
-				payType2.setItemid(Long.parseLong(jsonObject.getString("id")));
+				payType2.setPaytypeid(jsonObject.getString("id"));
 				payType2.setPaytypename(jsonObject.getString("name"));
 				payTypelist.add(payType2);
 			}

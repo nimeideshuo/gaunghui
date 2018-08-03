@@ -129,7 +129,7 @@ public class InpurDocPayAct extends BaseActivity implements Clean, OnClickListen
 		PDH.show(this, new PDH.ProgressCallBack() {
 
 			public void action() {
-				String localString = new ServiceCustomer().cu_queryCustomer(new ReqCustomerdebt().setCustomerid(customerid).setIscustomer(false));
+				String localString = new ServiceCustomer().cu_queryCustomerPreReceived(new ReqCustomerdebt().setCustomerid(customerid).setIscustomer(false));
 				handler.sendMessage(handler.obtainMessage(2, localString));
 			}
 
