@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llButtons" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/llButtons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_alignParentBottom="true">
-        <Button android:textSize="@dimen/dialog_button" android:id="@id/btnSelectAll" android:background="@drawable/btn_1_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:text="全选" android:layout_weight="1.0" />
-        <Button android:textSize="@dimen/dialog_button" android:id="@id/btnDelete" android:background="@drawable/btn_1_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:text="删除" android:layout_weight="1.0" />
-    </LinearLayout>
-</RelativeLayout>

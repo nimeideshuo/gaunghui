@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="200.0dip" android:minWidth="120.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="18.0sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/server_address_m" />
-    <EditText android:id="@id/etIpText" android:layout_width="200.0dip" android:layout_height="wrap_content" android:hint="请输入服务器地址" android:inputType="textUri" android:imeOptions="actionDone" />
-</LinearLayout>

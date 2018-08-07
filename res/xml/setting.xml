@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="setting" >
+
+    <PreferenceCategory android:title="数据管理" >
+        <Preference
+            android:key="@string/load_basic_data"
+            android:summary="同步商品、部门、仓库、客户等信息到平板"
+            android:title="同步基本数据" />
+        <Preference
+            android:key="@string/clear_database"
+            android:summary="删除本地所有数据"
+            android:title="清空数据" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="工作设置" >
+        <Preference
+            android:key="@string/work_department"
+            android:summary=""
+            android:title="工作部门" />
+        <Preference
+            android:key="@string/work_warehouse"
+            android:summary=""
+            android:title="默认仓库" />
+        <Preference
+            android:key="@string/net_setting"
+            android:summary="网络设置"
+            android:title="网络设置" />
+
+        <CheckBoxPreference
+            android:key="@string/combinationItem"
+            android:summary="商品合并：默认不合并"
+            android:title="商品合并开关:" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="@string/service_port"
+            android:summary="端口设置"
+            android:title="端口设置:" />
+           <Preference
+            android:key="@string/db_port"
+            android:summary="数据库端口设置"
+            android:title="数据库端口设置:" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="打印设置" >
+        <CheckBoxPreference
+            android:key="@string/bluetoothPrintIsShow"
+            android:summary="蓝牙打印开关：默认不显示"
+            android:title="蓝牙打印开关" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="@string/default_printer"
+            android:summary="无打印机"
+            android:title="设定打印机" />
+        <Preference
+            android:key="@string/printer_model"
+            android:summary="打印机型号"
+            android:title="设置打印机型号" />
+        <Preference
+            android:key="@string/print_mode"
+            android:summary="设置小票打印模版"
+            android:title="设置打印模版" />
+        <Preference
+            android:key="@string/clearlastzero"
+            android:summary="打印时是否保留数值小数点后末尾的零"
+            android:title="数值打印" />
+        <Preference
+            android:key="@string/minustuihuo"
+            android:summary="打印时退货商品数量显示为负数，销售退货单无效"
+            android:title="数值正负" />
+        <Preference
+            android:key="@string/printbarcode"
+            android:summary="打印商品条码和备注信息，商品名称单独一行打印时有效"
+            android:title="条码打印" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于" >
+        <Preference
+            android:key="@string/instruckment"
+            android:title="关于競商勿忧" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/out_doc_barcode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/barcode"
+                android:textSize="@dimen/dialog_label" />
+
+            <TextView
+                android:id="@+id/tvBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/out_doc_barcode_tv"
+                android:text="666666666666"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/tv_sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specification"
+                android:textSize="@dimen/dialog_label" />
+
+            <TextView
+                android:id="@+id/tvSpecification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_sf"
+                android:text="规格1*77"
+                android:textSize="@dimen/dialog_edit" />
+
+            <TextView
+                android:id="@+id/tvStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="库存"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/out_doc_warehourse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/warehourse"
+                android:textSize="@dimen/dialog_label" />
+
+            <Button
+                android:id="@+id/btnWarehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/out_doc_warehourse"
+                android:background="@drawable/btn_2_selector"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_Unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/unit"
+                android:textSize="@dimen/dialog_label" />
+
+            <Button
+                android:id="@+id/btnUnit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/out_doc_Unit"
+                android:background="@drawable/btn_2_selector"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/out_doc_Batch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/product_batch_m"
+                android:textSize="@dimen/dialog_label" />
+
+            <Button
+                android:id="@+id/btnBatch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/out_doc_Batch"
+                android:background="@drawable/btn_2_selector"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/out_doc_btnProDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/product_date_m"
+                android:textSize="@dimen/dialog_label" />
+
+            <Button
+                android:id="@+id/btnProDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/out_doc_btnProDate"
+                android:background="@drawable/btn_2_selector"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/number"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_number"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/price"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_price"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_Subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="小计"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etSubtotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_Subtotal"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_DiscountRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="单品折扣"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etDiscountRatio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_DiscountRatio"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_DiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="折后单价"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etDiscountPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_DiscountPrice"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_DiscountSubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="折后小计"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etDiscountSubtotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_DiscountSubtotal"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/out_doc_Remark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="备注"
+                android:textSize="@dimen/dialog_label" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/out_doc_Remark"
+                android:background="@drawable/login_panel_edit_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/dialog_edit" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cbExhibition"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="3.0"
+            android:text="陈列品"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

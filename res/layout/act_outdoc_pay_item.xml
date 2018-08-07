@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="40.0dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvPaytypeName"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center"
+        android:textSize="@dimen/dialog_label" />
+
+    <com.ahjswy.cn.views.EditTextWithDel
+        android:id="@+id/etPayAmount"
+        android:layout_width="0.0dip"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="0.7"
+        android:background="@drawable/login_panel_edit_bg"
+        android:drawableRight="@drawable/search_clear_pressed"
+        android:imeOptions="normal"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dialog_edit" />
+
+</LinearLayout>

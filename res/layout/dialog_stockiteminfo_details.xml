@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_panel_edit_focused" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="400.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5.0dip"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="400.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/swynopic"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/tvGoodsID"
+                android:layout_width="wrap_content"
+                android:layout_height="26.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tvBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="26.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tvSpecification"
+                android:layout_width="wrap_content"
+                android:layout_height="26.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tvModel"
+                android:layout_width="wrap_content"
+                android:layout_height="26.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tvStockNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tvsalecue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center|left"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_dialog_nor" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linear_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="14.0sp" android:gravity="center" android:id="@id/btnCheck" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="过账" android:layout_weight="1.0" />
+        <LinearLayout android:id="@id/btnCheckPrint" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="过账/打印" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btnPromotion" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="促销" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btnCustomerHistory" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="客史" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/trans" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="14.0sp" android:gravity="center" android:id="@id/btnDocProperty" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="属性" android:layout_weight="1.0" />
+        <LinearLayout android:id="@id/btnDelete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btnPay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="收款" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btnSave" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:background="@color/trans" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:background="@color/bg_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="保存" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

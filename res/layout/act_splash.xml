@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300.0dip"
+        android:layout_height="200.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100.0dip"
+        android:contentDescription="@string/cd"
+        android:src="@drawable/swyimage" />
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5.0dip"
+        android:textColor="@color/splash_info_text" />
+
+    <TextView
+        android:id="@+id/edition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5.0dip"
+        android:text="@string/edition"
+        android:textColor="@color/splash_info_text"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.0dip"
+        android:text="@string/copyright2"
+        android:textColor="@color/splash_info_text"
+        android:textSize="9.0sp" />
+
+</RelativeLayout>

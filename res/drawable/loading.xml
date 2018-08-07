@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/sc_publish_loading_01"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_02"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_03"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_04"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_05"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_06"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_07"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_08"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_09"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_10"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_11"
+        android:duration="@integer/duration"/>
+    <item
+        android:drawable="@drawable/sc_publish_loading_12"
+        android:duration="@integer/duration"/>
+
+</animation-list>

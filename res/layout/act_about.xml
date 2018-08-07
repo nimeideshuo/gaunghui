@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/swyimage" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/cd" />
+    <TextView android:textColor="@android:color/black" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/splash_info_text" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/edition" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/splash_info_text" android:id="@id/edition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/edition" android:layout_above="@id/copyright" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/splash_info_text" android:id="@id/copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/copyright2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

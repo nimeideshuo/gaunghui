@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="客户编号"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etCusId"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/customer_name"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etCusName"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/customer_contact" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etCusContactMobile"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/customer_telephone" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etCusTelephone"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="@string/customer_type"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/btnCusType"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="3.0"
+                android:background="@drawable/btn_2_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="@string/customer_region"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/btnCusRegion"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:layout_weight="3.0"
+                android:background="@drawable/btn_2_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="客户地址" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@+id/etAddress"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/bank_name" />
+
+            <AutoCompleteTextView
+                android:id="@id/actvCusBank"
+                style="@style/m_edtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/bank_account" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@id/etCusBankAccount"
+                style="@style/m_edtext"
+                android:inputType="number"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/m_text"
+                android:text="@string/customer_remark" />
+
+            <com.ahjswy.cn.views.EditTextWithDel
+                android:id="@id/etCusRemark"
+                style="@style/m_edtext" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

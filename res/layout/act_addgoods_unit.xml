@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_select_white_nor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/m_text"
+            android:text="@string/unit"
+            android:textColor="@color/red" />
+
+        <Spinner
+            android:id="@+id/spUnit"
+            style="@style/m_edtext"
+            android:background="@drawable/btn_2_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rgRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:textSize="16.0sp" />
+
+        <CheckBox
+            android:id="@+id/cbBaseUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="基本单位" />
+
+        <CheckBox
+            android:id="@+id/cbBigUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="计件单位" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/m_text"
+            android:text="@string/conversionRatio"
+            android:textColor="@color/red" />
+
+        <EditText
+            android:id="@+id/ratio"
+            style="@style/m_edtext"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_1_selector"
+        android:text="@string/delete"
+        android:visibility="gone" />
+
+</LinearLayout>
