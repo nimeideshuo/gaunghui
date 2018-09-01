@@ -1,5 +1,7 @@
 package com.ahjswy.cn.scaner;
 
+import com.ahjswy.cn.utils.MLog;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 
@@ -10,6 +12,7 @@ public class Scaner {
 
 	public static Scaner factory(Context context) {
 		String model = android.os.Build.MODEL;
+		MLog.d("model>>>"+model);
 		switch (model) {
 		case "MX-5020":
 			return new ScanerMX5020(context);
@@ -21,6 +24,8 @@ public class Scaner {
 			return new ScanerI6200S(context);
 		case "SQ43":
 			return new ScanerI6200S(context);
+		case "gioneely72_cwet_kk":
+			return new Gioneely72(context);
 		default:
 			break;
 		}
