@@ -15,6 +15,7 @@
 	<classpathentry kind="lib" path="libs/rxandroid-1.2.0.jar"/>
 	<classpathentry kind="lib" path="libs/rxjava-1.1.6.jar"/>
 	<classpathentry kind="lib" path="libs/ScanerLibrary.jar"/>
+	<classpathentry kind="lib" path="libs/BarcodeScan.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="con" path="org.eclipse.andmore.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.andmore.LIBRARIES"/>
